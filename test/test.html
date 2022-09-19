@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+font-family: 'Roboto', sans-serif;
+}
+
+.main-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color:#002B5B;
+  height:85vh;
+}
+
+.main-header{
+color:#8FE3CF;
+  font-size:25px;
+  line-height:40px;
+}
+img {
+    width: 100px;
+}
+.button a{
+  font-size:16px;
+  line-height:28px;
+  text-decoration:none;
+  background-color:#000;
+  padding:7px 15px;
+  text-transform:uppercase;
+  color:#fff;
+  border-radius:5px;
+}
+
+.modal-design{
+  position:fixed;
+  left:15px;
+  right:15px;
+  top:15px;
+  bottom:15px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  visibility:hidden;
+  opacity:0;
+  transition:all 0.3s;
+  background:#256D85;
+ 
+  color:#fff;
+  text-align:center;
+}
+
+.modal-design:target{
+visibility:visible;
+  opacity:0.95;
+  transition:all 0.3s;
+}
+
+.close-modal{
+  background-color:#002B5B;
+  padding:5px 15px;
+  color:#fff;
+  font-size:18px;
+  line-height:28px;
+  text-decoration:none;
+  text-transform:uppercase;
+  color:#fff;
+}
+
+.footer span{
+  float:right;
+  font-size:12x;
+  line-height:28px;
+  color:#256D85;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-header">
+          <h1>
+            HTML & CSS MODAL
+          </h1>
+        </div>
+
+        <div class="button">
+          <a href="#openModal"><img src="/comp/1-comp.webp" alt=""></a>
+        </div>
+        <div id="openModal" class="modal-design">
+          <div>
+            <h2>This Is Modal</h2>
+            <p>Modal created using HTML & CSS only</p>
+            <a href="#" class="close-modal">Close Modal</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+          <span>
+            By Vikram Pawar
+          </span>
+       </div>
+</body>
+</html>
